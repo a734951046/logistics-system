@@ -1,0 +1,13 @@
+.idea/
+*.iml
+out/
+target/
+*.jar
+*.war
+*.log
+.DS_Store
+.idea
+*.class
+*.db
+# Docker files
+docker-compose.yml
