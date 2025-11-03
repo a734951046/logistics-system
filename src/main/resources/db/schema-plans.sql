@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS plans (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  plan_no VARCHAR(64) UNIQUE,
+  order_id BIGINT,
+  assigned_supplier_id BIGINT,
+  route_id BIGINT,
+  contract_id BIGINT,
+  status VARCHAR(64),
+  planned_date DATETIME,
+  container_list TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
